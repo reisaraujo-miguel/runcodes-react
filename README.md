@@ -4,12 +4,12 @@ This project houses the future new and improved RunCodes frontend.
 
 ## The Stack
 
-- **Frontend Framework**: React 19.1.1
-- **Build Tool**: Vite 7.1.4 with SWC compiler
-- **Styling**: Tailwind CSS 4.1.12
-- **Language**: TypeScript 5.9.2
+- **Frontend Framework**: React
+- **Build Tool**: Vite with SWC compiler
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
 - **Package Manager**: Bun
-- **Linting**: ESLint 9.34.0 with TypeScript support
+- **Linting**: ESLint with TypeScript support
 - **UI Library**: shadcn/ui with Radix UI primitives
 
 ## Build & Run
