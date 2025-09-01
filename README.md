@@ -1,6 +1,6 @@
-# RunCodes Frontend
+# RunCodes Frontend (WIP)
 
-This project houses the new and improved RunCodes frontend.
+This project houses the future new and improved RunCodes frontend.
 
 ## The Stack
 
