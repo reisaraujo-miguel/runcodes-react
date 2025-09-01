@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -12,7 +10,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 import { CircleUserRound } from "lucide-react";
 
-const Navbar: React.FC = () => {
+export function Navbar() {
   return (
     <nav className="bg-slate-700">
       <div className="mx-auto flex items-center justify-between h-12">
@@ -53,6 +51,4 @@ const Navbar: React.FC = () => {
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
