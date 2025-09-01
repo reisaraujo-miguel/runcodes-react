@@ -1,54 +1,61 @@
-# React + TypeScript + Vite
+# RunCodes Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project houses the new and improved RunCodes frontend.
 
-Currently, two official plugins are available:
+## The Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend Framework**: React 19.1.1
+- **Build Tool**: Vite 7.1.4 with SWC compiler
+- **Styling**: Tailwind CSS 4.1.12 with shadcn/ui components
+- **Language**: TypeScript 5.9.2
+- **Package Manager**: Bun (bun.lock present)
+- **Linting**: ESLint 9.34.0 with TypeScript support
+- **UI Library**: shadcn/ui with Radix UI primitives
 
-## Expanding the ESLint configuration
+## Build & Run
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
+- [Bun](https://bun.sh/) (recommended) or Node.js 18+
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Installation
+
+1. Install dependencies:
+```bash
+bun install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Start the development server:
+```bash
+bun run dev
 ```
+
+3. Open your browser and navigate to `http://localhost:5173`
+
+### Other Commands
+
+- Build for production:
+```bash
+bun run build
+```
+
+- Preview the production build:
+```bash
+bun run preview
+```
+
+- Run linting:
+```bash
+bun run lint
+```
+
+## License
+
+For information on the license of this project, please see our [license file](LICENSE).
+
+## Contributors
+
+For information of the contributors of this project, please see our [contributors file](CONTRIBUTORS.md).
+
+## Contributing
+
+For information on contributing to this project, please see our [contribution guidelines](CONTRIBUTING.md).
