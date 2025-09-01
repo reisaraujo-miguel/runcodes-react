@@ -1,14 +1,13 @@
 import "./App.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import Navbar from "@/components/Navbar";
+import { LoginPage } from "./pages/LoginPage";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Navbar />
       <main>
-        <p>Running Codes... or not... YET!</p>
+        <LoginPage />
       </main>
     </ThemeProvider>
   );
