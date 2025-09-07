@@ -41,7 +41,7 @@ export function Navbar() {
             </DropdownMenu>
           </div>
           <div className="flex items-center justify-between bg-blue-500 text-white px-2 font-bold">
-            <span className="text-sm mr-4">Horario do Servidor:</span>
+            <span className="text-sm mr-4">Horário do Servidor:</span>
             <div className="flex flex-col text-center">
               <span className="block text-xs">06/06/6666</span>
               <span className="block text-xs">06:06:06</span>
