@@ -28,13 +28,9 @@ export function AboutSection() {
         <div className="pt-4">
           <p className="text-sm text-muted-foreground">
             Ao navegar no RunCodes você concorda com os{" "}
-            <button
-              type="button"
-              onClick={openTermsModal}
-              className="text-link hover:text-link-hover underline cursor-pointer"
-            >
-              Termos de Uso
-            </button>
+            <a onClick={openTermsModal} className="cursor-pointer">
+              termos de uso
+            </a>
             .
           </p>
         </div>
@@ -43,12 +39,7 @@ export function AboutSection() {
           <p className="text-sm text-muted-foreground">
             Note que o RunCodes ICMC não é um serviço mantido pelo STI, logo, em
             caso de problemas com a plataforma, entre em contato com{" "}
-            <a
-              href="mailto:runcodes@icmc.usp.br"
-              className="text-link hover:text-link-hover underline"
-            >
-              runcodes@icmc.usp.br
-            </a>
+            <a href="mailto:runcodes@icmc.usp.br">runcodes@icmc.usp.br</a>
           </p>
         </div>
       </div>
