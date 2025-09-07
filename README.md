@@ -15,16 +15,19 @@ This project houses the future new and improved RunCodes frontend.
 ## Build & Run
 
 ### Prerequisites
+
 - [Bun](https://bun.sh/) (recommended) or Node.js 18+
 
 ### Installation
 
 1. Install dependencies:
+
 ```bash
 bun install
 ```
 
 2. Start the development server:
+
 ```bash
 bun run dev
 ```
@@ -34,16 +37,19 @@ bun run dev
 ### Other Commands
 
 - Build for production:
+
 ```bash
 bun run build
 ```
 
 - Preview the production build:
+
 ```bash
 bun run preview
 ```
 
 - Run linting:
+
 ```bash
 bun run lint
 ```
