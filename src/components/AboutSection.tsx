@@ -31,7 +31,7 @@ export function AboutSection() {
             <button
               type="button"
               onClick={openTermsModal}
-              className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+              className="text-link hover:text-link-hover underline cursor-pointer"
             >
               Termos de Uso
             </button>
@@ -45,7 +45,7 @@ export function AboutSection() {
             caso de problemas com a plataforma, entre em contato com{" "}
             <a
               href="mailto:runcodes@icmc.usp.br"
-              className="text-blue-600 hover:text-blue-800 underline cursor-pointer"
+              className="text-link hover:text-link-hover underline"
             >
               runcodes@icmc.usp.br
             </a>
