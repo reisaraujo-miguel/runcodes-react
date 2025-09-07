@@ -42,26 +42,26 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
             <p>
               Ao concordar com esta política, você como usuário se compromete a
               não submeter quaisquer programas ou dados maliciosos que atentem
-              contra a integridade do sistema run.codes incluindo (porem está
+              contra a integridade do sistema RunCodes incluindo (porem está
               lista não é extensiva) phishing, malwares, worms, trojans, etc.
             </p>
             <p>
               Além disso, você como usuário afirma ser autor ou deter
               autorização para envio de qualquer dado ou programa submetido ao
-              sistema run.codes.
+              sistema RunCodes.
             </p>
 
             <h3 className="font-bold pt-4">4. Sobre correção automática:</h3>
             <p>
-              Ao se tornar um usuário do run.codes você autoriza e concorda com
-              a correção automática de qualquer programa ou dado submetido ao
+              Ao se tornar um usuário do RunCodes você autoriza e concorda com a
+              correção automática de qualquer programa ou dado submetido ao
               nosso sistema.
             </p>
 
             <h3 className="font-bold pt-4">5. Sobre verificação de plágio:</h3>
             <p>
-              Ao se tornar um usuário do run.codes você autoriza e concorda com
-              a verificação de plágio, isto é, comparação de seus programas ou
+              Ao se tornar um usuário do RunCodes você autoriza e concorda com a
+              verificação de plágio, isto é, comparação de seus programas ou
               dados, em relação a demais submissões realizadas por terceiros,
               bem como documentos disponíveis na Internet. Além disso, você
               autoriza o uso de seus programas e dados para verificação de
@@ -70,8 +70,8 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
 
             <h3 className="font-bold pt-4">6. Política de cookies:</h3>
             <p>
-              O site run.codes utiliza cookies. Esses cookies são utilizados
-              para distinguir os usuários do site. A utilização desses cookies
+              O site RunCodes utiliza cookies. Esses cookies são utilizados para
+              distinguir os usuários do site. A utilização desses cookies
               permite a coleta de estatísticas de acesso, ajudando-nos a
               oferecer uma boa experiência aos usuários do site e nos permitindo
               realizar melhorias constantes. São utilizadas, ainda, ferramentas
@@ -82,7 +82,7 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
 
             <h3 className="font-bold pt-4">7. Segurança das informações:</h3>
             <p>
-              Utilizamos criptografia SSL para proteger o run.codes e nossos
+              Utilizamos criptografia SSL para proteger o RunCodes e nossos
               usuários com o objetivo de evitar acessos, alterações e destruição
               de informações que detemos.
             </p>
@@ -136,7 +136,10 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
             <p>
               Em caso de dúvidas sobre estes termos, entre em contato através do
               email{" "}
-              <a href="mailto:runcodes@icmc.usp.br" className="text-blue-600">
+              <a
+                href="mailto:runcodes@icmc.usp.br"
+                className="text-link hover:text-link-hover underline"
+              >
                 runcodes@icmc.usp.br
               </a>
             </p>
