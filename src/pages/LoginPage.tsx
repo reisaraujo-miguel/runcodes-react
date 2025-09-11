@@ -1,6 +1,7 @@
 import { LoginCard } from "../components/LoginCard";
 import { AboutSection } from "../components/AboutSection";
 import { ModeToggle } from "../components/mode-toggle";
+import { Footer } from "../components/Footer";
 import { useTheme } from "../lib/theme";
 
 export function LoginPage() {
@@ -69,6 +70,7 @@ export function LoginPage() {
           <AboutSection />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
