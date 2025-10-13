@@ -1,0 +1,49 @@
+import * as React from "react";
+
+import { ChevronsUpDown } from "lucide-react";
+import { Button } from "./ui/button";
+
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+
+interface CollapsibleSectionProps {
+  label: string;
+  children?: React.ReactNode;
+}
+
+export function CollapsibleSection({
+  label,
+  children,
+}: CollapsibleSectionProps) {
+  const [isOpen, setIsOpen] = React.useState(false);
+  return (
+    <Collapsible open={isOpen} onOpenChange={setIsOpen} className="m-4">
+      <Card>
+        <CardHeader className="border-b">
+          <CardTitle className="row-span-2 self-center">{label}</CardTitle>
+          <CardAction>
+            <CollapsibleTrigger asChild>
+              <Button variant="ghost" size="icon" className="size-8">
+                <ChevronsUpDown />
+              </Button>
+            </CollapsibleTrigger>
+          </CardAction>
+        </CardHeader>
+        <CollapsibleContent>
+          <CardContent>{children}</CardContent>
+        </CollapsibleContent>
+      </Card>
+    </Collapsible>
+  );
+}

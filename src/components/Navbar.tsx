@@ -22,7 +22,7 @@ export function Navbar() {
           />
         </a>
         <div className="flex h-full">
-          <div className="flex items-center">
+          <div className="flex items-center text-white">
             <ModeToggle />
           </div>
           <div className="flex items-center px-2">
