@@ -29,8 +29,8 @@ export function CollapsibleSection({
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <Collapsible open={isOpen} onOpenChange={setIsOpen} className="m-4">
-      <Card>
-        <CardHeader className="border-b">
+      <Card className="p-2">
+        <CardHeader className="border-b p-2 [.border-b]:pb-2">
           <CardTitle className="row-span-2 self-center">{label}</CardTitle>
           <CardAction>
             <CollapsibleTrigger asChild>

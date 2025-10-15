@@ -14,17 +14,19 @@ export function Navbar() {
   return (
     <nav className="bg-slate-700">
       <div className="mx-auto flex items-center justify-between h-12">
-        <a href="/" className="ml-4">
-          <img
-            src="/src/assets/runcodes-logo/logo.png"
-            alt="RunCodes Logo"
-            className="h-10"
-          />
-        </a>
-        <div className="flex h-full">
-          <div className="flex items-center text-white">
+        <div className="flex items-center">
+          <a href="/" className="ml-4">
+            <img
+              src="/src/assets/runcodes-logo/logo.png"
+              alt="RunCodes Logo"
+              className="h-10"
+            />
+          </a>
+          <div className="text-white">
             <ModeToggle />
           </div>
+        </div>
+        <div className="flex h-full">
           <div className="flex items-center px-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
