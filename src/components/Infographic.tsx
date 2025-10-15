@@ -15,7 +15,7 @@ export function Infographic({
   return (
     <Card className="aspect-2/1 max-w-50 min-w-30 p-2 content-contain gap-2 place-content-center">
       <div className="flex justify-end">
-        <h1 className="text-xs"> {label} </h1>
+        <h1 className="text-[0.65rem]"> {label} </h1>
       </div>
       <div className="grid grid-cols-3 pb-4">
         <div className="grid place-content-center">{icon}</div>
