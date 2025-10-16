@@ -1,6 +1,5 @@
 import { CollapsibleSection } from "@/components/CollapsibleSection";
 import { InfographicRow } from "@/components/InfographicRow";
-import { Terminal } from "lucide-react";
 export function Home() {
   return (
     <div>

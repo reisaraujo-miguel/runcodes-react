@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useMemo, useCallback } from "react";
 
-import { ThemeProviderContext, Theme } from "../lib/theme";
+import { ThemeProviderContext, type Theme } from "../lib/theme";
 
 interface ThemeProviderProps {
   children: React.ReactNode;
