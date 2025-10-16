@@ -3,6 +3,9 @@ import { AboutSection } from "../components/AboutSection";
 import { ModeToggle } from "../components/mode-toggle";
 import { useTheme } from "../lib/theme";
 
+import Logo from "@/assets/runcodes-logo/logo.png";
+import LogoBlue from "@/assets/runcodes-logo/logoblue.png";
+
 export function LoginPage() {
   const { theme } = useTheme();
 
@@ -19,11 +22,7 @@ export function LoginPage() {
         <div className="relative hidden h-full flex-col bg-muted p-10 lg:flex dark:border-r">
           <div className="relative z-20 flex items-center text-lg font-medium">
             <img
-              src={
-                isDarkTheme
-                  ? "/src/assets/runcodes-logo/logo.png"
-                  : "/src/assets/runcodes-logo/logoblue.png"
-              }
+              src={isDarkTheme ? Logo : LogoBlue}
               alt="RunCodes Logo"
               className="h-10"
             />
@@ -46,11 +45,7 @@ export function LoginPage() {
         {/* Mobile: Logo and Theme Toggle */}
         <div className="lg:hidden flex items-center justify-between p-6">
           <img
-            src={
-              isDarkTheme
-                ? "/src/assets/runcodes-logo/logo.png"
-                : "/src/assets/runcodes-logo/logoblue.png"
-            }
+            src={isDarkTheme ? Logo : LogoBlue}
             alt="RunCodes Logo"
             className="h-10"
           />
