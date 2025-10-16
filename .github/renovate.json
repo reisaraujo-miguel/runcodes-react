@@ -1,0 +1,74 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "all major dependencies",
+      "groupSlug": "all-major"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["@types/*"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["eslint", "@typescript-eslint/*"],
+      "groupName": "ESLint packages"
+    },
+    {
+      "matchPackagePatterns": ["@radix-ui/*"],
+      "groupName": "Radix UI packages"
+    },
+    {
+      "matchPackagePatterns": ["tailwindcss", "@tailwindcss/*"],
+      "groupName": "Tailwind CSS packages"
+    },
+    {
+      "matchPackagePatterns": ["vite", "@vitejs/*", "rolldown-vite"],
+      "groupName": "Vite packages"
+    }
+  ],
+  "labels": ["dependencies", "renovate"],
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 10,
+  "branchConcurrentLimit": 5,
+  "automerge": false,
+  "automergeType": "pr",
+  "platformAutomerge": true,
+  "dependencyDashboard": true,
+  "dependencyDashboardAutoclose": true,
+  "rebaseWhen": "behind-base-branch",
+  "semanticCommits": "enabled",
+  "semanticCommitType": "chore",
+  "semanticCommitScope": "deps",
+  "schedule": [
+    "before 3am on monday"
+  ],
+  "timezone": "America/New_York",
+  "rangeStrategy": "auto",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 3am on the first day of the month"]
+  },
+  "ignoreDeps": [
+    "node"
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"]
+  }
+}
+

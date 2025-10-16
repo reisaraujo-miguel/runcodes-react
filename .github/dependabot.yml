@@ -1,0 +1,38 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "weekly"
+    # Group all npm updates together
+    groups:
+      npm-dependencies:
+        patterns:
+          - "*"
+    # Set reviewers for pull requests
+    reviewers:
+      - "reisaraujo-miguel"
+    # Add labels to pull requests
+    labels:
+      - "dependencies"
+      - "dependabot"
+    # Allow up to 10 open pull requests for npm
+    open-pull-requests-limit: 10
+    # Commit message preferences
+    commit-message:
+      # Prefix all commit messages with "chore(deps):"
+      prefix: "chore(deps)"
+      # Include scope for dependencies
+      prefix-development: "chore(dev-deps)"
+    # Ignore major version updates for now
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
